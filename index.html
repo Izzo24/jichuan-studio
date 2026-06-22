@@ -286,6 +286,10 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
 .reveal.visible{opacity:1;transform:none}
 .reveal-left{opacity:0;transform:translateX(-30px);transition:opacity 0.8s ease,transform 0.8s ease}
 .reveal-left.visible{opacity:1;transform:none}
+
+.hero-img{width:100%;height:100%;object-fit:cover;display:block}
+.about-img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-img{width:100%;height:100%;object-fit:cover;display:block;min-height:200px}
 </style>
 </head>
 <body>
@@ -319,66 +323,15 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
   <div class="hero-bg"></div>
   <div class="hero-visual">
     <div class="hero-panel">
-      <svg viewBox="0 0 400 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="700" fill="#100e0b"/>
-        <defs>
-          <radialGradient id="h1Light" cx="50%" cy="30%" r="60%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.15)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="400" height="700" fill="url(#h1Light)"/>
-        <ellipse cx="200" cy="220" rx="55" ry="70" fill="rgba(26,24,20,0.9)"/>
-        <rect x="160" y="280" width="80" height="200" fill="rgba(26,24,20,0.85)" rx="2"/>
-        <path d="M160 350 Q130 400 120 500 Q150 480 200 490 Q250 480 280 500 Q270 400 240 350 Z" fill="rgba(30,27,22,0.8)"/>
-        <rect x="0" y="450" width="400" height="50" fill="rgba(220,210,190,0.06)"/>
-        <rect x="0" y="520" width="400" height="60" fill="rgba(220,210,190,0.04)"/>
-        <rect x="0" y="600" width="400" height="100" fill="rgba(220,210,190,0.08)"/>
-      </svg>
+      <img class="hero-img" src="img/hero1.webp" alt="婚禮紀錄" loading="lazy" decoding="async" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-panel">
-      <svg viewBox="0 0 400 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="700" fill="#0e0c09"/>
-        <circle cx="80" cy="150" r="80" fill="rgba(196,168,130,0.05)"/>
-        <circle cx="320" cy="100" r="60" fill="rgba(196,168,130,0.04)"/>
-        <circle cx="200" cy="300" r="100" fill="rgba(196,168,130,0.03)"/>
-        <circle cx="50" cy="500" r="70" fill="rgba(196,168,130,0.04)"/>
-        <circle cx="350" cy="600" r="90" fill="rgba(196,168,130,0.05)"/>
-        <ellipse cx="200" cy="380" rx="60" ry="80" fill="rgba(180,160,120,0.2)"/>
-        <ellipse cx="180" cy="330" rx="20" ry="30" fill="rgba(220,200,170,0.25)" transform="rotate(-20 180 330)"/>
-        <ellipse cx="220" cy="320" rx="18" ry="28" fill="rgba(220,200,170,0.2)" transform="rotate(15 220 320)"/>
-        <ellipse cx="200" cy="315" rx="15" ry="25" fill="rgba(240,220,190,0.3)"/>
-        <path d="M185 345 Q180 400 175 460" stroke="rgba(80,100,60,0.4)" stroke-width="2" fill="none"/>
-        <path d="M200 355 Q200 420 198 480" stroke="rgba(80,100,60,0.35)" stroke-width="2" fill="none"/>
-        <path d="M215 345 Q220 400 222 460" stroke="rgba(80,100,60,0.4)" stroke-width="2" fill="none"/>
-        <rect x="0" y="0" width="100" height="700" fill="rgba(201,165,99,0.03)"/>
-      </svg>
+      <img class="hero-img" src="img/hero2.webp" alt="婚禮紀錄" loading="lazy" decoding="async" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-panel">
-      <svg viewBox="0 0 400 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="700" fill="#0d0c0a"/>
-        <polygon points="0,500 100,280 200,420 300,200 400,350 400,700 0,700" fill="rgba(20,18,14,0.9)"/>
-        <polygon points="0,600 80,400 160,500 250,300 340,440 400,380 400,700 0,700" fill="rgba(15,13,10,0.95)"/>
-        <defs>
-          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="rgba(60,45,25,0.5)"/>
-            <stop offset="60%" stop-color="rgba(25,20,12,0.3)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </linearGradient>
-        </defs>
-        <rect width="400" height="500" fill="url(#skyGrad)"/>
-        <circle cx="50" cy="80" r="1" fill="rgba(220,200,160,0.6)"/>
-        <circle cx="120" cy="50" r="0.8" fill="rgba(220,200,160,0.5)"/>
-        <circle cx="200" cy="100" r="1.2" fill="rgba(220,200,160,0.7)"/>
-        <circle cx="300" cy="70" r="1" fill="rgba(220,200,160,0.5)"/>
-        <circle cx="360" cy="120" r="0.8" fill="rgba(220,200,160,0.6)"/>
-        <circle cx="320" cy="100" r="18" fill="rgba(220,200,160,0.12)"/>
-        <circle cx="320" cy="100" r="12" fill="rgba(220,200,160,0.08)"/>
-        <rect x="0" y="470" width="400" height="40" fill="rgba(220,210,190,0.05)"/>
-        <rect x="0" y="540" width="400" height="60" fill="rgba(220,210,190,0.07)"/>
-      </svg>
+      <img class="hero-img" src="img/hero3.webp" alt="婚禮紀錄" loading="lazy" decoding="async" />
       <div class="hero-overlay"></div>
     </div>
   </div>
@@ -557,23 +510,7 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
   </div>
   <div class="about-visual reveal">
     <div class="about-main-img">
-      <svg viewBox="0 0 420 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="420" height="560" fill="#1a1814"/>
-        <defs>
-          <radialGradient id="aboutLight" cx="35%" cy="25%" r="55%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.18)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="420" height="560" fill="url(#aboutLight)"/>
-        <rect x="40" y="0" width="120" height="400" fill="rgba(201,165,99,0.08)"/>
-        <ellipse cx="220" cy="200" rx="55" ry="68" fill="rgba(160,135,90,0.2)"/>
-        <rect x="175" y="258" width="90" height="180" fill="rgba(140,115,75,0.18)" rx="2"/>
-        <ellipse cx="220" cy="165" rx="58" ry="38" fill="rgba(40,30,18,0.7)"/>
-        <path d="M175 200 Q150 280 155 380" stroke="rgba(40,30,18,0.5)" stroke-width="18" fill="none"/>
-        <path d="M175 320 Q140 370 130 460 Q180 440 220 445 Q260 440 310 460 Q300 370 245 320 Z" fill="rgba(220,200,170,0.1)"/>
-        <rect x="0" y="450" width="420" height="110" fill="rgba(201,165,99,0.04)"/>
-      </svg>
+      <img class="about-img" src="img/about.webp" alt="紀川攝影 — 底片攝影師工作實況" loading="lazy" decoding="async" />
     </div>
     <div class="about-accent">
       <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -650,139 +587,31 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
   </div>
   <div class="gallery-grid">
     <div class="gal-item">
-      <svg viewBox="0 0 700 620" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:300px">
-        <rect width="700" height="620" fill="#1a1612"/>
-        <defs>
-          <radialGradient id="g1light" cx="40%" cy="35%" r="55%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.12)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="700" height="620" fill="url(#g1light)"/>
-        <rect x="250" y="50" width="200" height="400" rx="100" stroke="rgba(196,168,130,0.08)" stroke-width="1" fill="rgba(196,168,130,0.02)"/>
-        <ellipse cx="255" cy="80" rx="30" ry="22" fill="rgba(220,200,170,0.1)" transform="rotate(-20 255 80)"/>
-        <ellipse cx="445" cy="80" rx="28" ry="20" fill="rgba(220,200,170,0.08)" transform="rotate(20 445 80)"/>
-        <ellipse cx="320" cy="280" rx="28" ry="36" fill="rgba(160,135,90,0.2)"/>
-        <rect x="298" y="310" width="44" height="180" fill="rgba(140,115,75,0.18)" rx="1"/>
-        <ellipse cx="380" cy="275" rx="26" ry="34" fill="rgba(220,200,175,0.18)"/>
-        <rect x="358" y="305" width="44" height="160" fill="rgba(200,180,150,0.12)" rx="1"/>
-        <path d="M358 400 Q320 440 280 520 Q350 500 380 510 Q410 500 440 520 Q420 460 402 400 Z" fill="rgba(220,200,175,0.08)"/>
-        <rect x="0" y="500" width="700" height="60" fill="rgba(220,210,190,0.05)"/>
-        <rect x="0" y="570" width="700" height="50" fill="rgba(220,210,190,0.07)"/>
-      </svg>
+      <img class="gal-img" src="img/g-arch.webp" alt="婚禮 · 拱門儀式" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Wedding · Arch Ceremony</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 340 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:200px">
-        <rect width="340" height="300" fill="#17140f"/>
-        <defs>
-          <radialGradient id="g2light" cx="30%" cy="25%" r="50%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.2)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="340" height="300" fill="url(#g2light)"/>
-        <ellipse cx="140" cy="110" rx="45" ry="56" fill="rgba(180,155,110,0.22)"/>
-        <rect x="102" y="158" width="76" height="130" fill="rgba(160,135,90,0.18)" rx="2"/>
-        <ellipse cx="140" cy="72" rx="48" ry="32" fill="rgba(40,30,18,0.75)"/>
-        <path d="M102 130 Q75 190 78 290" stroke="rgba(40,30,18,0.5)" stroke-width="22" fill="none"/>
-        <rect x="200" y="0" width="80" height="300" fill="rgba(201,165,99,0.04)"/>
-      </svg>
+      <img class="gal-img" src="img/g-portrait.webp" alt="人像 · 自然光" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Portrait · Natural Light</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 160 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:180px">
-        <rect width="160" height="300" fill="#131109"/>
-        <rect x="40" y="80" width="80" height="60" rx="3" fill="rgba(30,25,18,0.9)" stroke="rgba(196,168,130,0.2)" stroke-width="0.8"/>
-        <rect x="48" y="88" width="64" height="44" rx="2" fill="rgba(201,165,99,0.1)"/>
-        <circle cx="80" cy="110" r="18" stroke="rgba(196,168,130,0.5)" stroke-width="2.5" fill="none"/>
-        <circle cx="80" cy="96" r="5" fill="rgba(220,215,200,0.35)"/>
-        <circle cx="20" cy="40" r="30" fill="rgba(196,168,130,0.04)"/>
-        <circle cx="140" cy="240" r="40" fill="rgba(196,168,130,0.04)"/>
-      </svg>
+      <img class="gal-img" src="img/g-ring.webp" alt="細節 · 婚戒" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Detail · Ring</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 220 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:180px">
-        <rect width="220" height="300" fill="#16130e"/>
-        <ellipse cx="110" cy="120" rx="55" ry="65" fill="rgba(220,200,170,0.08)"/>
-        <ellipse cx="90" cy="100" rx="28" ry="36" fill="rgba(220,200,170,0.12)" transform="rotate(-15 90 100)"/>
-        <ellipse cx="130" cy="95" rx="26" ry="34" fill="rgba(220,200,170,0.1)" transform="rotate(10 130 95)"/>
-        <ellipse cx="110" cy="85" rx="22" ry="30" fill="rgba(240,220,190,0.14)"/>
-        <path d="M85 175 Q80 230 75 290" stroke="rgba(60,80,45,0.4)" stroke-width="2.5" fill="none"/>
-        <path d="M110 185 Q108 240 106 295" stroke="rgba(60,80,45,0.35)" stroke-width="2.5" fill="none"/>
-        <path d="M135 175 Q140 230 144 290" stroke="rgba(60,80,45,0.4)" stroke-width="2.5" fill="none"/>
-        <rect x="0" y="0" width="30" height="300" fill="rgba(201,165,99,0.04)"/>
-      </svg>
+      <img class="gal-img" src="img/g-bouquet.webp" alt="細節 · 捧花" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Detail · Bouquet</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:180px">
-        <rect width="340" height="260" fill="#0e0d0a"/>
-        <rect x="50" y="60" width="12" height="200" fill="rgba(40,20,12,0.8)"/>
-        <rect x="150" y="60" width="12" height="200" fill="rgba(40,20,12,0.8)"/>
-        <rect x="38" y="58" width="136" height="18" rx="4" fill="rgba(50,25,14,0.9)"/>
-        <rect x="44" y="80" width="124" height="10" rx="2" fill="rgba(45,22,12,0.7)"/>
-        <rect x="140" y="90" width="8" height="170" fill="rgba(35,18,10,0.6)"/>
-        <rect x="220" y="90" width="8" height="170" fill="rgba(35,18,10,0.6)"/>
-        <rect x="132" y="88" width="104" height="14" rx="3" fill="rgba(40,20,11,0.7)"/>
-        <defs>
-          <radialGradient id="toriiGlow" cx="50%" cy="40%" r="45%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.12)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="340" height="260" fill="url(#toriiGlow)"/>
-        <rect x="0" y="80" width="6" height="180" fill="rgba(20,18,12,0.7)"/>
-        <ellipse cx="3" cy="72" rx="18" ry="24" fill="rgba(25,35,20,0.5)"/>
-        <rect x="280" y="70" width="6" height="190" fill="rgba(20,18,12,0.7)"/>
-        <ellipse cx="283" cy="62" rx="20" ry="26" fill="rgba(25,35,20,0.45)"/>
-      </svg>
+      <img class="gal-img" src="img/g-kyoto.webp" alt="旅遊 · 京都" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Travel · Kyoto</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:180px">
-        <rect width="340" height="260" fill="#15120d"/>
-        <defs>
-          <radialGradient id="coupleGlow" cx="50%" cy="40%" r="50%">
-            <stop offset="0%" stop-color="rgba(201,165,99,0.14)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </radialGradient>
-        </defs>
-        <rect width="340" height="260" fill="url(#coupleGlow)"/>
-        <ellipse cx="148" cy="110" rx="24" ry="30" fill="rgba(160,135,90,0.22)"/>
-        <rect x="130" y="134" width="36" height="90" fill="rgba(140,115,75,0.2)" rx="1"/>
-        <ellipse cx="192" cy="105" rx="22" ry="28" fill="rgba(220,200,175,0.18)"/>
-        <rect x="175" y="127" width="34" height="85" fill="rgba(200,180,150,0.15)" rx="1"/>
-        <rect x="0" y="220" width="340" height="40" fill="rgba(30,25,18,0.5)"/>
-        <rect x="0" y="0" width="80" height="260" fill="rgba(20,30,15,0.2)"/>
-        <rect x="260" y="0" width="80" height="260" fill="rgba(20,30,15,0.18)"/>
-        <circle cx="40" cy="60" r="30" fill="rgba(196,168,130,0.04)"/>
-        <circle cx="300" cy="80" r="25" fill="rgba(196,168,130,0.04)"/>
-      </svg>
+      <img class="gal-img" src="img/g-couple.webp" alt="情侶 · 戶外" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Couple · Outdoor</span></div>
     </div>
     <div class="gal-item">
-      <svg viewBox="0 0 280 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="min-height:180px">
-        <rect width="280" height="260" fill="#0c0b08"/>
-        <defs>
-          <linearGradient id="sunsetGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="rgba(60,40,18,0.6)"/>
-            <stop offset="40%" stop-color="rgba(40,25,10,0.5)"/>
-            <stop offset="100%" stop-color="transparent"/>
-          </linearGradient>
-        </defs>
-        <rect width="280" height="180" fill="url(#sunsetGrad)"/>
-        <circle cx="140" cy="130" r="25" fill="rgba(201,165,99,0.15)"/>
-        <circle cx="140" cy="130" r="15" fill="rgba(201,165,99,0.1)"/>
-        <polygon points="0,180 60,100 120,155 180,80 240,130 280,110 280,260 0,260" fill="rgba(15,12,8,0.9)"/>
-        <polygon points="0,220 40,160 100,200 160,145 220,185 280,160 280,260 0,260" fill="rgba(10,8,5,0.95)"/>
-        <rect x="0" y="220" width="280" height="40" fill="rgba(20,16,10,0.6)"/>
-        <ellipse cx="140" cy="238" rx="50" ry="10" fill="rgba(201,165,99,0.06)"/>
-        <circle cx="30" cy="30" r="1" fill="rgba(220,200,160,0.5)"/>
-        <circle cx="100" cy="20" r="0.8" fill="rgba(220,200,160,0.6)"/>
-        <circle cx="200" cy="40" r="1" fill="rgba(220,200,160,0.5)"/>
-      </svg>
+      <img class="gal-img" src="img/g-landscape.webp" alt="旅遊 · 風景" loading="lazy" decoding="async" />
       <div class="gal-hover"><span class="gal-hover-text">Travel · Landscape</span></div>
     </div>
   </div>
