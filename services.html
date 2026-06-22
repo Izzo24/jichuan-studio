@@ -293,15 +293,30 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
 .gal-img{width:100%;height:100%;object-fit:cover;display:block;min-height:200px}
 
 /* ───────── 手機版 RWD（≤768px）───────── */
+/* 漢堡按鈕（桌機隱藏，手機由 media query 顯示） */
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:rgba(45,38,32,0.6);border:1px solid rgba(196,168,130,0.35);border-radius:50%;cursor:pointer;padding:0;z-index:100;position:relative;backdrop-filter:blur(4px)}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--sand);transition:transform .35s,opacity .35s;margin:0 auto}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:768px){
   /* 導覽：收成可換行的小字橫列，移除大 gap */
   header{padding:16px 20px;flex-wrap:wrap;gap:8px}
   .logo-text{font-size:18px}
   .logo-sub{font-size:9px}
-  nav{gap:8px 14px;flex-wrap:wrap;justify-content:center;width:100%;margin-top:6px}
-  nav a{font-size:12px;letter-spacing:0.04em;white-space:nowrap}
-  /* CTA 獨立換到第二行置中，避免貼邊被切 */
-  nav a.nav-cta{flex-basis:100%;text-align:center;padding:9px 0;margin-top:2px}
+  /* 漢堡選單：手機隱藏橫排 nav，改全螢幕滑出面板 */
+  header{flex-wrap:nowrap}
+  .nav-toggle{display:flex!important;position:fixed;top:16px;right:20px}
+  header{position:fixed;padding:16px 20px}
+  nav{
+    position:fixed;inset:0;background:rgba(12,11,9,0.98);
+    flex-direction:column;justify-content:center;align-items:center;gap:28px;
+    transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);
+    z-index:90;width:100%;margin:0;
+  }
+  nav.open{transform:translateX(0)}
+  nav a{font-size:20px;letter-spacing:0.08em;padding:8px 0}
+  nav a.nav-cta{margin-top:12px;padding:14px 40px;font-size:15px}
 
   /* 通用 section 內距收斂 */
   .about,.services,.process,.testimonials,.cta,.gallery{padding-left:20px!important;padding-right:20px!important}
@@ -358,6 +373,7 @@ footer{background:var(--dark);border-top:1px solid rgba(196,168,130,0.1)}
   .about-stats{grid-template-columns:1fr 1fr}
   .work-meta{grid-template-columns:1fr}
 }
+
 </style>
 
 <style>
@@ -406,6 +422,9 @@ nav a.active{color:var(--sand)}
     <a href="portfolio.html">作品集</a>
     <a href="book.html" class="nav-cta">預約諮詢</a>
   </nav>
+  <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" onclick="toggleNav(this)">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <section class="subpage-hero">
@@ -567,6 +586,22 @@ const observer=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})
 },{threshold:0.1});
 revealEls.forEach(el=>observer.observe(el));
+
+function toggleNav(btn){
+  var nav=document.querySelector('header nav');
+  var open=nav.classList.toggle('open');
+  btn.classList.toggle('open',open);
+  btn.setAttribute('aria-expanded',open?'true':'false');
+  document.body.style.overflow=open?'hidden':'';
+}
+document.querySelectorAll('header nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    var nav=document.querySelector('header nav');
+    var btn=document.querySelector('.nav-toggle');
+    nav.classList.remove('open');if(btn){btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+    document.body.style.overflow='';
+  });
+});
 </script>
 
 </body>
