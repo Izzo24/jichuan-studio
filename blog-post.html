@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>作品集｜紀川攝影工作室 Jìchuān Studio</title>
+<title>為什麼我們堅持用底片拍婚禮｜攝影日誌 — 紀川攝影工作室</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -139,6 +139,7 @@ nav a:hover{color:var(--sand)}
   width:45%;aspect-ratio:1;overflow:hidden;border:4px solid var(--black);
 }
 .about-accent svg{width:100%;height:100%}
+.about-accent img.about-accent-img{width:100%;height:100%;object-fit:cover;display:block}
 .about-tag{
   position:absolute;top:32px;right:-16px;
   background:var(--brown);border:1px solid rgba(196,168,130,0.2);padding:16px 20px;
@@ -444,7 +445,7 @@ nav .nav-foot{display:none}
 </style>
 </head>
 <body>
-
+<div class="nav-backdrop"></div>
 <header>
   <a href="index.html" class="logo">
     <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -466,8 +467,8 @@ nav .nav-foot{display:none}
       <a href="index.html" style="--i:1"><span class="nav-num">01</span><span class="nav-zh">首頁</span><span class="nav-en">Home</span></a>
       <a href="about.html" style="--i:2"><span class="nav-num">02</span><span class="nav-zh">關於我們</span><span class="nav-en">About</span></a>
       <a href="services.html" style="--i:3"><span class="nav-num">03</span><span class="nav-zh">服務項目</span><span class="nav-en">Services</span></a>
-      <a href="portfolio.html" class="active" style="--i:4"><span class="nav-num">04</span><span class="nav-zh">作品集</span><span class="nav-en">Portfolio</span></a>
-      <a href="blog.html" style="--i:5"><span class="nav-num">05</span><span class="nav-zh">日誌</span><span class="nav-en">Journal</span></a>
+      <a href="portfolio.html" style="--i:4"><span class="nav-num">04</span><span class="nav-zh">作品集</span><span class="nav-en">Portfolio</span></a>
+      <a href="blog.html" class="active" style="--i:5"><span class="nav-num">05</span><span class="nav-zh">日誌</span><span class="nav-en">Journal</span></a>
       <a href="book.html" class="nav-cta" style="--i:6">預約諮詢</a>
       <div class="nav-foot" style="--i:7">
         <div class="nav-foot-brand">紀川 · Jìchuān Studio</div>
@@ -479,59 +480,41 @@ nav .nav-foot{display:none}
     <span></span><span></span><span></span>
   </button>
 </header>
-<div class="nav-backdrop"></div>
 
-<section class="subpage-hero">
-  <div class="section-label">Portfolio</div>
-  <h1>作品集</h1>
-  <p>每一格底片，都是一個不願被遺忘的瞬間。點選作品，看見每段故事的完整篇章。</p>
-</section>
-<section class="gallery">
-  <div class="gallery-grid">
-    <div class="gal-item">
-      <a href="work-arch.html">
-        <img class="gal-img" src="img/g-arch.webp" alt="拱門婚禮儀式" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Wedding · Arch Ceremony</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-portrait.html">
-        <img class="gal-img" src="img/g-portrait.webp" alt="自然光人像" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Portrait · Natural Light</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-ring.html">
-        <img class="gal-img" src="img/g-ring.webp" alt="婚戒細節" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Detail · Ring</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-bouquet.html">
-        <img class="gal-img" src="img/g-bouquet.webp" alt="捧花細節" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Detail · Bouquet</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-kyoto.html">
-        <img class="gal-img" src="img/g-kyoto.webp" alt="京都旅拍" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Travel · Kyoto</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-couple.html">
-        <img class="gal-img" src="img/g-couple.webp" alt="戶外情侶" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Couple · Outdoor</span></div>
-      </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-landscape.html">
-        <img class="gal-img" src="img/g-landscape.webp" alt="風景旅拍" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Travel · Landscape</span></div>
-      </a>
-    </div>
+<article class="post-hero">
+  <img src="img/film1.webp" alt="底片婚禮攝影" class="post-hero-img">
+  <div class="post-hero-overlay"></div>
+  <div class="post-hero-inner">
+    <div class="post-hero-meta"><span class="post-cat">拍攝心得</span><span>2026.06.08</span></div>
+    <h1>為什麼我們堅持<br>用底片拍婚禮</h1>
   </div>
-</section>
+</article>
+
+<div class="post-content">
+  <p class="lead">數位攝影很方便，按下快門就能立刻看到成果。但這些年來，我們依然在許多重要的婚禮上，選擇用底片拍攝。不是為了懷舊，而是因為底片給的，是另一種無法被取代的東西。</p>
+
+  <h2>底片的溫度，來自它的「不完美」</h2>
+  <p>數位影像追求的是銳利、乾淨、精準。但人的情感從來不是這樣的。底片獨特的顆粒感、對高光的柔和寬容、以及它渲染膚色的方式，讓畫面多了一層說不出的溫度。那不是濾鏡能模擬的，而是光真實地在膠片上留下的痕跡。</p>
+
+  <figure class="post-figure">
+    <img src="img/film3.webp" alt="婚禮現場" loading="lazy">
+    <figcaption>午後窗光下的交換戒指，底片把這一刻的柔軟完整保留。</figcaption>
+  </figure>
+
+  <h2>慢下來，才能看見真正重要的瞬間</h2>
+  <p>底片每一張都有成本，這逼著我們慢下來、想清楚再按快門。也正因為這份節制，我們更專注於觀察——新娘父親別過頭擦淚的那一秒、伴娘悄悄握緊新人的手、長輩看著新人時眼底的光。這些沒被安排的真實瞬間，往往才是一場婚禮最珍貴的部分。</p>
+
+  <blockquote>我們拍的不是「好看的照片」，<br>而是「會被一翻再翻、想起當時心跳」的照片。</blockquote>
+
+  <h2>它是一種承諾</h2>
+  <p>選擇底片，也是我們對每對新人的承諾：我們會用最慎重的態度，對待你人生中最重要的一天。每一捲底片沖洗出來，都像拆禮物一樣令人期待——而那份期待，正是影像最動人的地方。</p>
+
+  <div class="post-cta">
+    <p>想用底片，為你的重要時刻留下永恆印記嗎？</p>
+    <a href="book.html" class="btn-primary">預約拍攝諮詢</a>
+    <a href="blog.html" class="btn-ghost">← 回到攝影日誌</a>
+  </div>
+</div>
 
 <footer>
   <div class="footer-top">
@@ -582,7 +565,27 @@ nav .nav-foot{display:none}
   </div>
 </footer>
 
-
+<style>
+.post-hero{position:relative;height:min(70vh,620px);overflow:hidden;display:flex;align-items:flex-end}
+.post-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.post-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,11,9,0.92) 0%,rgba(12,11,9,0.3) 60%,rgba(12,11,9,0.5) 100%)}
+.post-hero-inner{position:relative;max-width:900px;margin:0 auto;width:100%;padding:0 48px 60px}
+.post-hero-meta{display:flex;gap:16px;align-items:center;margin-bottom:20px;color:var(--sand);font-size:13px;letter-spacing:.06em}
+.post-hero-meta .post-cat{border:1px solid rgba(196,168,130,0.5);padding:4px 12px;text-transform:uppercase;font-size:11px;letter-spacing:.15em}
+.post-hero h1{font-size:clamp(30px,5vw,52px);font-weight:700;color:var(--white);line-height:1.3;letter-spacing:.02em}
+.post-content{max-width:760px;margin:0 auto;padding:clamp(50px,7vw,90px) 48px}
+.post-content .lead{font-size:19px;line-height:1.95;color:var(--cream);font-weight:300;margin-bottom:40px}
+.post-content h2{font-size:25px;font-weight:600;color:var(--white);margin:48px 0 20px;letter-spacing:.03em}
+.post-content p{font-size:16px;line-height:2.05;color:var(--film);font-weight:300;margin-bottom:22px}
+.post-figure{margin:44px 0}
+.post-figure img{width:100%;border-radius:2px}
+.post-figure figcaption{margin-top:14px;font-size:13px;color:var(--warm);text-align:center;letter-spacing:.04em;font-style:italic}
+.post-content blockquote{margin:44px 0;padding:28px 36px;border-left:2px solid var(--sand);font-size:21px;line-height:1.7;color:var(--cream);font-weight:300}
+.post-cta{margin-top:60px;padding-top:44px;border-top:1px solid rgba(212,196,168,0.12);text-align:center}
+.post-cta p{font-size:18px;color:var(--white);margin-bottom:24px}
+.post-cta .btn-ghost{margin-left:14px}
+@media(max-width:640px){.post-hero-inner,.post-content{padding-left:24px;padding-right:24px}}
+</style>
 <script>
 const revealEls=document.querySelectorAll('.reveal,.reveal-left');
 const observer=new IntersectionObserver((entries)=>{
@@ -590,7 +593,6 @@ const observer=new IntersectionObserver((entries)=>{
 },{threshold:0.1});
 revealEls.forEach(el=>observer.observe(el));
 </script>
-
 <script>
 function toggleNav(b){
   var n=document.querySelector('header nav');

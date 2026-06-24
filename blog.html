@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>作品集｜紀川攝影工作室 Jìchuān Studio</title>
+<title>攝影日誌｜紀川攝影工作室 Jìchuān Studio</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -139,6 +139,7 @@ nav a:hover{color:var(--sand)}
   width:45%;aspect-ratio:1;overflow:hidden;border:4px solid var(--black);
 }
 .about-accent svg{width:100%;height:100%}
+.about-accent img.about-accent-img{width:100%;height:100%;object-fit:cover;display:block}
 .about-tag{
   position:absolute;top:32px;right:-16px;
   background:var(--brown);border:1px solid rgba(196,168,130,0.2);padding:16px 20px;
@@ -444,7 +445,7 @@ nav .nav-foot{display:none}
 </style>
 </head>
 <body>
-
+<div class="nav-backdrop"></div>
 <header>
   <a href="index.html" class="logo">
     <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -466,8 +467,8 @@ nav .nav-foot{display:none}
       <a href="index.html" style="--i:1"><span class="nav-num">01</span><span class="nav-zh">首頁</span><span class="nav-en">Home</span></a>
       <a href="about.html" style="--i:2"><span class="nav-num">02</span><span class="nav-zh">關於我們</span><span class="nav-en">About</span></a>
       <a href="services.html" style="--i:3"><span class="nav-num">03</span><span class="nav-zh">服務項目</span><span class="nav-en">Services</span></a>
-      <a href="portfolio.html" class="active" style="--i:4"><span class="nav-num">04</span><span class="nav-zh">作品集</span><span class="nav-en">Portfolio</span></a>
-      <a href="blog.html" style="--i:5"><span class="nav-num">05</span><span class="nav-zh">日誌</span><span class="nav-en">Journal</span></a>
+      <a href="portfolio.html" style="--i:4"><span class="nav-num">04</span><span class="nav-zh">作品集</span><span class="nav-en">Portfolio</span></a>
+      <a href="blog.html" class="active" style="--i:5"><span class="nav-num">05</span><span class="nav-zh">日誌</span><span class="nav-en">Journal</span></a>
       <a href="book.html" class="nav-cta" style="--i:6">預約諮詢</a>
       <div class="nav-foot" style="--i:7">
         <div class="nav-foot-brand">紀川 · Jìchuān Studio</div>
@@ -479,57 +480,71 @@ nav .nav-foot{display:none}
     <span></span><span></span><span></span>
   </button>
 </header>
-<div class="nav-backdrop"></div>
 
 <section class="subpage-hero">
-  <div class="section-label">Portfolio</div>
-  <h1>作品集</h1>
-  <p>每一格底片，都是一個不願被遺忘的瞬間。點選作品，看見每段故事的完整篇章。</p>
+  <div class="subpage-hero-inner">
+    <div class="section-label">Journal</div>
+    <h1>攝影日誌</h1>
+    <p class="subpage-hero-sub">拍攝心得、光影筆記、婚禮與旅程的幕後故事。記錄我們對影像與情感的每一份思考。</p>
+  </div>
 </section>
-<section class="gallery">
-  <div class="gallery-grid">
-    <div class="gal-item">
-      <a href="work-arch.html">
-        <img class="gal-img" src="img/g-arch.webp" alt="拱門婚禮儀式" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Wedding · Arch Ceremony</span></div>
+
+<section class="blog-section">
+  <div class="blog-grid">
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film1.webp" alt="為什麼我們堅持用底片拍婚禮" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">拍攝心得</span><span class="post-date">2026.06</span></div>
+          <h3>為什麼我們堅持用底片拍婚禮</h3>
+          <p>數位很方便，但底片有一種無法複製的溫度。那種顆粒、那種對光的寬容，讓每一張照片都像會呼吸。這篇分享我們選擇底片的理由，以及它如何改變我們紀錄情感的方式。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-portrait.html">
-        <img class="gal-img" src="img/g-portrait.webp" alt="自然光人像" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Portrait · Natural Light</span></div>
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film2.webp" alt="自然光，是人像最溫柔的化妝師" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">技術分享</span><span class="post-date">2026.05</span></div>
+          <h3>自然光，是人像最溫柔的化妝師</h3>
+          <p>我們很少用閃燈。清晨的斜射光、午後的窗光、黃昏的逆光——這些自然光線，比任何器材都更能襯托一個人最真實的樣子。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-ring.html">
-        <img class="gal-img" src="img/g-ring.webp" alt="婚戒細節" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Detail · Ring</span></div>
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film3.webp" alt="一場婚禮，我們在等的不是擺拍" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">婚禮紀實</span><span class="post-date">2026.05</span></div>
+          <h3>一場婚禮，我們在等的不是擺拍</h3>
+          <p>婚禮攝影最珍貴的，往往不是精心安排的橋段，而是那些沒被注意到的瞬間——新娘父親別過頭擦淚、伴娘偷偷握緊新人的手。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-bouquet.html">
-        <img class="gal-img" src="img/g-bouquet.webp" alt="捧花細節" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Detail · Bouquet</span></div>
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film4.webp" alt="把旅行拍成一首詩，而不是打卡" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">旅遊攝影</span><span class="post-date">2026.04</span></div>
+          <h3>把旅行拍成一首詩，而不是打卡</h3>
+          <p>旅遊攝影不是把景點拍清楚就好。我們想捕捉的是那個當下的氛圍、溫度與心情，讓多年後再看，依然能想起風的味道。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-kyoto.html">
-        <img class="gal-img" src="img/g-kyoto.webp" alt="京都旅拍" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Travel · Kyoto</span></div>
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film5.webp" alt="拍攝前，你該知道的五件事" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">拍攝指南</span><span class="post-date">2026.04</span></div>
+          <h3>拍攝前，你該知道的五件事</h3>
+          <p>從服裝挑選、場地勘景到當天的心理準備，一份完整的拍攝前指南，讓你在鏡頭前更自在，照片也更自然動人。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-couple.html">
-        <img class="gal-img" src="img/g-couple.webp" alt="戶外情侶" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Couple · Outdoor</span></div>
+      <a href="blog-post.html" class="post-card">
+        <div class="post-img"><img src="img/film6.webp" alt="一本相冊，是時間的容器" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">作品幕後</span><span class="post-date">2026.03</span></div>
+          <h3>一本相冊，是時間的容器</h3>
+          <p>數位檔案會被遺忘在硬碟裡，但一本實體相冊會被一翻再翻。我們如何為每對新人，編排一本值得珍藏一生的故事書。</p>
+          <span class="post-more">閱讀全文 →</span>
+        </div>
       </a>
-    </div>
-    <div class="gal-item">
-      <a href="work-landscape.html">
-        <img class="gal-img" src="img/g-landscape.webp" alt="風景旅拍" loading="lazy" decoding="async" />
-        <div class="gal-hover"><span class="gal-hover-text">Travel · Landscape</span></div>
-      </a>
-    </div>
   </div>
 </section>
 
@@ -582,7 +597,23 @@ nav .nav-foot{display:none}
   </div>
 </footer>
 
-
+<style>
+.blog-section{padding:clamp(60px,8vw,110px) 48px;background:var(--black)}
+.blog-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:40px 32px}
+.post-card{display:flex;flex-direction:column;background:var(--dark);border:1px solid rgba(212,196,168,0.08);overflow:hidden;transition:transform .4s,border-color .4s}
+.post-card:hover{transform:translateY(-4px);border-color:rgba(196,168,130,0.35)}
+.post-img{aspect-ratio:3/2;overflow:hidden}
+.post-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.post-card:hover .post-img img{transform:scale(1.05)}
+.post-body{padding:28px 26px 32px;display:flex;flex-direction:column;flex:1}
+.post-meta{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+.post-cat{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--sand);border:1px solid rgba(196,168,130,0.4);padding:3px 10px}
+.post-date{font-size:12px;color:var(--warm);letter-spacing:.05em;font-family:Georgia,serif}
+.post-body h3{font-size:20px;font-weight:600;color:var(--white);line-height:1.55;margin-bottom:12px}
+.post-body p{font-size:14px;color:var(--film);line-height:1.9;font-weight:300;flex:1;margin-bottom:18px}
+.post-more{font-size:13px;color:var(--sand);letter-spacing:.06em}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr;gap:28px}}
+</style>
 <script>
 const revealEls=document.querySelectorAll('.reveal,.reveal-left');
 const observer=new IntersectionObserver((entries)=>{
@@ -590,7 +621,6 @@ const observer=new IntersectionObserver((entries)=>{
 },{threshold:0.1});
 revealEls.forEach(el=>observer.observe(el));
 </script>
-
 <script>
 function toggleNav(b){
   var n=document.querySelector('header nav');
